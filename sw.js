@@ -16,7 +16,7 @@ self.addEventListener('install', function(event){
       return cache.addAll(urlToCache);
     })
   );
-  
+});
   self.addEventListener('activate', function(event){
     console.log("inside activate event");
     
@@ -45,4 +45,4 @@ self.addEventListener('install', function(event){
     );
   });
   
-});
+
