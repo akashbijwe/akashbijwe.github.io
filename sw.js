@@ -5,6 +5,7 @@ var urlToCache = [
   'bootstrap.min.css',
   'jquery.min.js',
   'bootstrap.min.js',
+  'offline.html'
 ];
 self.addEventListener('install', function(event){
   console.log("inside install event");
@@ -39,7 +40,9 @@ self.addEventListener('install', function(event){
      event.respondWith(
       caches.match(event.request).then(function(response) {
         return response || fetch(event.request);
-      })
+      }).catch(function(){
+        return caches.match('offline.html');
+      });
     );
   });
   
