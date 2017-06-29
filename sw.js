@@ -30,9 +30,8 @@ self.addEventListener('install', function(event){
           }.map(function(cacheName){
             return caches.delete(cacheName);
           })
-         );
         );
-      });
+      })
     );
   });
   
