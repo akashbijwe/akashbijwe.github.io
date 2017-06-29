@@ -17,4 +17,12 @@ self.addEventListener('install', function(event){
     })
   );
   
+  self.addEventListener('activate', function(){
+    console.log("inside activate event");
+  });
+  
+  self.addEventListener('fetch', function(){
+    console.log("inside fetch event");
+  });
+  
 });
