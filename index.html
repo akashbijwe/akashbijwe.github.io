@@ -9,7 +9,7 @@
         console.log("service worker present");
         window.addEventListener("load", function(){
         	navigator.serviceWorker.register("sw.js").then(function(registration){
-            console.log("service worker registered with scope", register.scope);
+            console.log("service worker registered with scope", registration.scope);
           }, function(err){
             console.log("Service worker failed", err)
           })
