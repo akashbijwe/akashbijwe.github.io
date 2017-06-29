@@ -1,0 +1,20 @@
+<html>
+  <head>
+    <title>Service Worker</title>
+  </head>
+  <body>
+    Service Worker Exapmple
+    <script>
+    	if('serviceWorker' in navigator){
+        console.log("service worker present");
+        window.addEventListener("load", function(){
+        	navigator.serviceWorker.register("sw.js").then(function(registration){
+            console.log("service worker registered with scope", register.scope);
+          }, function(err){
+            console.log("Service worker failed", err)
+          })
+        });
+      }
+    </script>
+  </body>
+</html>
