@@ -17,11 +17,11 @@ self.addEventListener('install', function(event){
     })
   );
   
-  self.addEventListener('activate', function(){
+  self.addEventListener('activate', function(event){
     console.log("inside activate event");
   });
   
-  self.addEventListener('fetch', function(){
+  self.addEventListener('fetch', function(event){
     console.log("inside fetch event");
   });
   
