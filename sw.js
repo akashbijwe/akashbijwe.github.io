@@ -39,8 +39,10 @@ self.addEventListener('install', function(event){
 
      event.respondWith(
       caches.match(event.request).then(function(response) {
+        console.log("caches.match");
         return response || fetch(event.request);
       }).catch(function(){
+        console.log("catch");
         return caches.match('offline.html');
       })
     );
