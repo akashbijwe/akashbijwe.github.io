@@ -1,40 +1,446 @@
-<html>
-  <head>
-    <title>Service Worker</title>
-    <link rel="stylesheet" href="bootstrap.min.css">
-  </head>
-  <body>
-    <nav class="navbar navbar-inverse">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <a class="navbar-brand" href="#">WebSiteName</a>
-    </div>
-    <ul class="nav navbar-nav">
-      <li class="active"><a href="#">Home</a></li>
-      <li><a href="#">Page 1</a></li>
-      <li><a href="#">Page 2</a></li>
-      <li><a href="#">Page 3</a></li>
-    </ul>
-  </div>
-</nav>
-  
-<div class="container">
-  <h3>Inverted Navbar</h3>
-  <p>An inverted navbar is black instead of gray.</p>
-</div>
-    <script type="text/javascript" src="jquery.min.js"></script>
-    <script type="text/javascript" src="bootstrap.min.js"></script>
-    <script>
-    	if('serviceWorker' in navigator){
-        console.log("service worker present");
-        window.addEventListener("load", function(){
-        	navigator.serviceWorker.register("sw.js").then(function(registration){
-            console.log("service worker registered with scope", registration.scope);
-          }, function(err){
-            console.log("Service worker failed", err)
-          })
-        });
-      }
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Akash Bijwe</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="keywords" content="Akash Bijwe" />
+    <script type="application/x-javascript">
+        addEventListener("load", function() {
+            setTimeout(hideURLbar, 0);
+        }, false);
+
+        function hideURLbar() {
+            window.scrollTo(0, 1);
+        }
     </script>
-  </body>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="css/font-awesome.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+
+</head>
+
+<body>
+    <!-- banner -->
+    <div class="banner" id="home">
+        <div class="header">
+            <div class="w3_agile_logo">
+                <h1><a href="index.html">AKASH BIJWE<span>WHO IAM</span></a></h1>
+            </div>
+            <div class="w3_menu">
+                <div class="mobile-nav-button">
+                    <div class="mobile-nav-button__line"></div>
+                    <div class="mobile-nav-button__line"></div>
+                    <div class="mobile-nav-button__line"></div>
+                </div>
+                <nav class="mobile-menu">
+                    <ul>
+                        <li><a href="#home" class="active scroll">Home</a></li>
+                        <li><a href="#about" class="scroll">About</a></li>
+                        <li><a href="#skills" class="scroll">Skills</a></li>
+                        <li><a href="#work" class="scroll">Education</a></li>
+                        <li><a href="#gallery" class="scroll">Gallery</a></li>
+                        <li><a href="#contact" class="scroll">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="clearfix"> </div>
+        </div>
+        <div class="agile_banner_info">
+            <h2><span>HI! I'm</span> Akash Bijwe</h2>
+            <div id="typed-strings" class="agileits_w3layouts_strings">
+                <p>FRONT END <i>DEVELOPER.</i></p>
+            </div>
+            <span id="typed" style="white-space:pre;"></span>
+            <p class="banner-p-w3ls">If debugging is the process of removing software bugs, then programming must be the process of putting them in.</p>
+        </div>
+        <div class="w3_agileits_social_media">
+            <ul>
+                <li><a href="https://www.facebook.com/akash.bijwe" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/akashbijwe/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                <li><a href="https://github.com/akashbijwe" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a></li>
+                <li><a href="https://www.instagram.com/akashbijwe/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- //banner -->
+    <!-- about -->
+    <div class="about" id="about">
+        <div class="col-md-6 about-left-w3ls">
+
+        </div>
+        <div class="col-md-6 person-info-agileits-w3layouts">
+            <h3 class="w3_head w3_head1">About Me <span>I am Akash Bijwe</span></h3>
+            <p>
+                <span>Hi!, I am Akash Bijwe </span> Have more than 3 years experience of Front End Development in field of IT, Studied Bachelor of engineering from Amravati University. Having good hands on HTML, CSS, Bootstrap, jQuery, Javascript & Angular JS.
+            </p>
+            <ul>
+                <li><span>Name</span>: Akash Bijwe</li>
+                <li><span>Age</span>: 24 Years</li>
+                <li><span>Experience</span>: 3+ Years</li>
+                <li><span>Email</span>: <a href="mailto:mr.akashbijwe@gmail.com">mr.akashbijwe@gmail.com</a></li>
+                <li><span>Phone</span>: (91) 8149944697</li>
+                <li><span>Website</span>: <a href="#">www.mywebsite.com</a></li>
+                <li><span>Address</span>: Mumbai, INDIA</li>
+                <li><a href="RESUME-AKASHBIJWE-compressed.pdf" target="_blank" class="botton-w3ls">Download CV</a></li>
+            </ul>
+        </div>
+        <div class="clearfix"></div>
+    </div>
+    <!-- //about-bottom -->
+    <!--skills -->
+    <div class="skills-agileinfo" id="skills">
+        <div class="container">
+            <h3 class="w3_head w3_head1 white-agile">My Skills <span>My special expertise</span></h3>
+            <div class="modal-spa">
+                <div class="skills">
+                    <div class="col-md-6 bar-grids bargrids-left">
+                        <h4><span class="glyphicon glyphicon-cog"></span> Technical Skills </h4>
+                        <h6>HTML  <span> 80% </span></h6>
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-striped active" style="width: 80%">
+                            </div>
+                        </div>
+                        <h6>CSS <span> 90% </span></h6>
+                        <div class="progress  w3-agile">
+                            <div class="progress-bar progress-bar-striped active" style="width: 70%">
+                            </div>
+                        </div>
+                        <h6>Javascript<span>70% </span></h6>
+                        <div class="progress  w3-agile">
+                            <div class="progress-bar progress-bar-striped active" style="width: 90%">
+                            </div>
+                        </div>
+                        <h6>Jquery <span> 80% </span></h6>
+                        <div class="progress  w3-agile prgs-w3agile-last">
+                            <div class="progress-bar progress-bar-striped active" style="width: 75%">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 bar-grids  w3-agile">
+                        <br />
+                        <br />
+                        <br />
+                        <h6>Angular JS<span> 70% </span></h6>
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-striped active" style="width: 85%">
+                            </div>
+                        </div>
+                        <h6>Bootstrap<span> 90% </span></h6>
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-striped active" style="width: 95%">
+                            </div>
+                        </div>
+                        <h6>TypeScript<span>85% </span></h6>
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-striped active" style="width: 90%">
+                            </div>
+                        </div>
+                        <h6>Chrome Extension<span>85% </span></h6>
+                        <div class="progress prgs-w3agile-last">
+                            <div class="progress-bar progress-bar-striped active" style="width: 86%">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="clearfix"> </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- //skills -->
+    <!-- experiences -->
+
+    <div class="work" id="work">
+        <div class="container">
+            <h3 class="w3_head w3_head1">experience & Education <span>More about my past</span></h3>
+            <h5>Work experience</h5>
+            <div class="work-info-agileits">
+                <div class="col-md-4 work-left-agileits-w3layouts">
+                    <h6><i class="fa fa-calendar-check-o" aria-hidden="true"></i> Feb 2017-Present</h6>
+                </div>
+                <div class="col-md-8 work-right-w3-agileits">
+                    <h3>Zycus Infotech, Mumbai.</h3>
+                    <p>Implement Visual Designs in standards compliant, clean markup (HTML5/CSS3/JS), Thoroughly test cross browser compatibility of all product interfaces.</p>
+                </div>
+                <div class="clearfix"> </div>
+            </div>
+            <div class="work-info-agileits">
+                <div class="col-md-4 work-left-agileits-w3layouts">
+                    <h6><i class="fa fa-calendar-check-o" aria-hidden="true"></i> Sept 2015 - Feb 2017</h6>
+                </div>
+                <div class="col-md-8 work-right-w3-agileits">
+                    <h3>ParityCube Pvt Ltd. Mumbai.</h3>
+                    <p> Work with developers to integrate markup across projects, Identify and research new UI technologies, Suggest and implement improvements to existing product interfaces, Assist in building wire-frames/prototypes.</p>
+                </div>
+                <div class="clearfix"> </div>
+            </div>
+            <div class="work-info-agileits">
+                <div class="col-md-4 work-left-agileits-w3layouts">
+                    <h6><i class="fa fa-calendar-check-o" aria-hidden="true"></i> Aug 2014 - Sep 2016</h6>
+                </div>
+                <div class="col-md-8 work-right-w3-agileits">
+                    <h3>Viragh Microsystems, Nagpur.</h3>
+                    <p>Design, implement and maintain the web content portals for the company’s Midwest Portal. Collaborate with Web PHP Developers throughout company to coordinate global portal management.</p>
+                </div>
+                <div class="clearfix"> </div>
+            </div>
+            <h5 class="work2">Education</h5>
+            <div class="work-info-agileits">
+                <div class="col-md-4 work-left-agileits-w3layouts">
+                    <h6><i class="fa fa-calendar-check-o" aria-hidden="true"></i> 2011 - 2014</h6>
+                </div>
+                <div class="col-md-8 work-right-w3-agileits">
+                    <h3>Amravati University</h3>
+                    <p>A Bachelor of Engineering in Information Technology.</p>
+                </div>
+                <div class="clearfix"> </div>
+            </div>
+            <div class="work-info-agileits">
+                <div class="col-md-4 work-left-agileits-w3layouts">
+                    <h6><i class="fa fa-calendar-check-o" aria-hidden="true"></i> 2008-2011</h6>
+                </div>
+                <div class="col-md-8 work-right-w3-agileits">
+                    <h3>MSBTE Mumbai,</h3>
+                    <p>3 Years Technical Diploma in Information Technology.</p>
+                </div>
+                <div class="clearfix"> </div>
+            </div>
+        </div>
+    </div>
+    <!-- //experiences -->
+
+    <!-- gallery -->
+    <div class="gallery_wthree services" id="gallery">
+        <div class="container">
+            <h3 class="w3_head w3_head1">My Work <span>My latest work</span></h3>
+            <div class="gallery_grid agileits_w3layouts">
+                <div class="col-md-6  col-sm-6 col-xs-6 grid_w3">
+                    <div class="grid-1">
+                        <a class="cm-overlay" href="https://codepen.io/akashbijwe/pen/YVwyzj" target="_blank">
+                            <img src="images/gg1.png" alt=" " class="img-responsive" />
+                            <div class="w3agile-text w3agile-text-smal1">
+                                <h5>CSS Work Desk</h5>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="sub_grid gallery_w3l">
+                        <div class="col-md-6 col-sm-6 col-xs-6 grid-1 grid-c grid_w3l">
+                            <a class="cm-overlay" href="https://codepen.io/akashbijwe/pen/mmZVbE" target="_blank">
+																<img src="images/gg5.png" alt=" " class="img-responsive" />
+																<div class="w3agile-text w3agile-text-smal1 full-height-w3">
+																		<h5>CSS Thela</h5>
+																</div>
+														</a>
+                        </div>
+                        <div class="col-md-6 col-sm-6 col-xs-6 grid-1 grid-b grid_w3l">
+													<a class="cm-overlay" href="https://codepen.io/akashbijwe/pen/PpZvdb" target="_blank">
+															<img src="images/gg4.png" alt=" " class="img-responsive" />
+															<div class="w3agile-text w3agile-text-small full-height-w3">
+																	<h5>CSS India gate</h5>
+															</div>
+													</a>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-6 col-xs-6 grid_w3">
+                    <div class="sub_grid">
+                        <div class="col-md-6 col-sm-6 col-xs-6 grid-1 grid-c grid_w3l">
+                            <a class="cm-overlay" href="https://codepen.io/akashbijwe/pen/rwRbxz" target="_blank">
+                                <img src="images/gg2.png" alt=" " class="img-responsive" />
+                                <div class="w3agile-text w3agile-text-small full-height-w3">
+                                    <h5>CSS Sadhu</h5>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-md-6 col-sm-6 col-xs-6 grid-1 grid-d grid_w3l">
+
+														<a class="cm-overlay" href="https://codepen.io/akashbijwe/pen/jrBaZb" target="_blank">
+                                <img src="images/gg3.png" alt=" " class="img-responsive" />
+                                <div class="w3agile-text w3agile-text-smal1 full-height-w3">
+                                    <h5>CSS Owl</h5>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                    <div class="grid-1 grid-2">
+                        <a class="cm-overlay" href="https://codepen.io/akashbijwe/pen/gwGdAv" target="_blank">
+                            <img src="images/gg6.png" alt=" " class="img-responsive" />
+                            <div class="w3agile-text w3agile-text-smal1">
+                                <h5>Machine</h5>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+    </div>
+    <!-- //gallery -->
+
+    <!--footer-->
+    <div class="contact" id="contact">
+        <br />
+        <h3 class="w3_head w3_head1">Contact Me <span>Get in touch with me</span></h3>
+        <!-- <div class="col-md-5 contact-agileits-w3layouts">
+            <form action="#" method="post">
+                <input type="text" name="Your Name" placeholder="Name" required="">
+                <input type="email" name="Your Email" placeholder="Email" required="">
+                <input type="text" name="Phone Number" placeholder="Number" required="">
+                <textarea name="Message" placeholder="Message" required=""></textarea>
+                <input type="submit" value="Submit">
+            </form>
+        </div> -->
+
+        <div class="col-md-12 contact-map-right">
+            <div id="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d296.2845944956072!2d72.8475579450751!3d19.162707124003436!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x6c3b60dc641e37d0!2sSamarth+Complex!5e0!3m2!1sen!2sin!4v1510404347619" width="100%" height="394px" frameborder="0" style="border:0" allowfullscreen></iframe>
+            </div>
+        </div>
+        <div class="clearfix"></div>
+    </div>
+    <div class="contact-info">
+        <div class="container">
+            <div class="col-md-4 contact-grids">
+                <h5>Find me</h5>
+                <div class="w3_agileits_social_media-footer">
+                    <ul>
+                        <li><a href="https://www.facebook.com/akash.bijwe" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                        <li><a href="https://www.linkedin.com/in/akashbijwe/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                        <li><a href="https://github.com/akashbijwe" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a></li>
+                        <li><a href="https://www.instagram.com/akashbijwe/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-4 contact-grids contact-mid">
+                <h5>Contact Info</h5>
+                <ul>
+                    <li><i class="fa fa-phone" aria-hidden="true"></i>(91) 8149944697</li>
+                    <li><i class="fa fa-map-marker" aria-hidden="true"></i>Mumbai, India</li>
+                    <li><i class="fa fa-envelope-o" aria-hidden="true"></i><a href="mailto:mr.akashbijwe@gmail.com">mr.akashbijwe@gmail.com</a></li>
+                </ul>
+            </div>
+            <!-- <div class="col-md-4 contact-grids">
+		<h5>My Twitter</h5>
+		<div  class="callbacks_container">
+				<ul class="rslides" id="slider3">
+					<li>
+						<i class="fa fa-twitter" aria-hidden="true"></i>Praesent imperdiet diam sagittis, egestas <a href="#" class="mail">
+						@http://t.co/9vslJFpW</a> <span>ABOUT 15 MINS</span>
+					</li>
+					<li>
+						<i class="fa fa-twitter" aria-hidden="true"></i>Diam sagittis, egestas praesent imperdiet<a href="#" class="mail">
+						@http://t.co/9vslJFpW</a> <span>ABOUT 2 HOURS</span>
+					</li>
+					<li>
+						<i class="fa fa-twitter" aria-hidden="true"></i>Imperdiet diam sagittis, praesent egestas <a href="#" class="mail">
+						@http://t.co/9vslJFpW</a> <span>ABOUT 3 DAYS</span>
+					</li>
+					<li>
+						<i class="fa fa-twitter" aria-hidden="true"></i>Egestas praesent imperdiet diam sagittis <a href="#" class="mail">
+						@http://t.co/9vslJFpW</a> <span>ABOUT 1 WEEK</span>
+					</li>
+				</ul>
+			</div>
+	</div> -->
+            <div class="clearfix"></div>
+        </div>
+    </div>
+    <div class="copy-w3-agile">
+        <p>Copyright 2017 Akash BIjwe.</p>
+    </div>
+    <!--//footer-->
+
+    <!-- js -->
+    <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+
+    <!-- Navigation-JavaScript -->
+    <!-- menu -->
+    <script>
+        $(document).ready(function() {
+            $('.mobile-nav-button').on('click', function() {
+                $(".mobile-nav-button .mobile-nav-button__line:nth-of-type(1)").toggleClass("mobile-nav-button__line--1");
+                $(".mobile-nav-button .mobile-nav-button__line:nth-of-type(2)").toggleClass("mobile-nav-button__line--2");
+                $(".mobile-nav-button .mobile-nav-button__line:nth-of-type(3)").toggleClass("mobile-nav-button__line--3");
+
+                $('.mobile-menu').toggleClass('mobile-menu--open');
+                return false;
+            });
+        });
+    </script>
+    <!-- //Navigation-JavaScript -->
+
+    <!-- banner-type-text -->
+    <script src="js/typed.js" type="text/javascript"></script>
+    <script>
+        $(function() {
+
+            $("#typed").typed({
+                // strings: ["Typed.js is a <strong>jQuery</strong> plugin.", "It <em>types</em> out sentences.", "And then deletes them.", "Try it out!"],
+                stringsElement: $('#typed-strings'),
+                typeSpeed: 30,
+                backDelay: 500,
+                loop: false,
+                contentType: 'html', // or text
+                // defaults to false for infinite loop
+                loopCount: false,
+                callback: function() {
+                    foo();
+                },
+                resetCallback: function() {
+                    newTyped();
+                }
+            });
+
+            $(".reset").click(function() {
+                $("#typed").typed('reset');
+            });
+
+        });
+
+        function newTyped() { /* A new typed object */ }
+
+        function foo() {}
+    </script>
+    <!-- //banner-type-text -->
+
+    <script type="text/javascript" src="js/move-top.js"></script>
+    <script type="text/javascript" src="js/easing.js"></script>
+    <script type="text/javascript">
+        jQuery(document).ready(function($) {
+            $(".scroll").click(function(event) {
+                event.preventDefault();
+                $('html,body').animate({
+                    scrollTop: $(this.hash).offset().top
+                }, 1000);
+            });
+        });
+    </script>
+    <!-- start-smoth-scrolling -->
+    <!-- smooth scrolling -->
+    <script type="text/javascript">
+        $(document).ready(function() {
+            /*
+            	var defaults = {
+            	containerID: 'toTop', // fading element id
+            	containerHoverID: 'toTopHover', // fading element hover id
+            	scrollSpeed: 1200,
+            	easingType: 'linear'
+            	};
+            */
+            $().UItoTop({
+                easingType: 'easeOutQuart'
+            });
+        });
+    </script>
+
+    <div class="arr-w3ls">
+        <a href="#home" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+    </div>
+    <!-- //smooth scrolling -->
+</body>
+
 </html>
