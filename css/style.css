@@ -2320,6 +2320,7 @@ a.callbacks_nav.callbacks1_nav.prev {
 	}
 	.banner {
 		min-height: 305px;
+		background-position: top;
 	}
 	.grid_w3l {
 		width: 48.8%;
@@ -2359,6 +2360,10 @@ a.callbacks_nav.callbacks1_nav.prev {
 	.copy-w3-agile p {
 		font-size: 12.5px;
 		line-height: 28px;
+	}
+	.person-info-agileits-w3layouts ul{
+		margin-bottom: 1.2em;
+		display: inline-block;
 	}
 }
 @media(max-width:440px){
@@ -2419,7 +2424,7 @@ a.callbacks_nav.callbacks1_nav.prev {
 	.full-height-w3 h5 {
 		padding: 8.5em 0 0!important;
 	}
-	#map {
+	#map , #map iframe{
 		height: 235px;
 	}
 	#toTop {
