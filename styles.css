@@ -1,0 +1,144 @@
+@font-face {
+  font-family: Ballegra;
+  src: url(assets/Ballegra.ttf);
+  font-weight: bold;
+}
+@font-face {
+  font-family: Montserrat-Bold;
+  src: url(assets/Montserrat-Bold.ttf);
+  font-weight: bold;
+}
+@font-face {
+  font-family: Montserrat-Medium;
+  src: url(assets/Montserrat-Medium.ttf);
+  font-weight: bold;
+}
+@font-face {
+  font-family: Montserrat-Regular;
+  src: url(assets/Montserrat-Regular.ttf);
+  font-weight: bold;
+}
+*{
+  font-family: Montserrat-Medium;
+  color: #7B7565;
+}
+.section-1{
+  background-image: url('assets/Section1_img.png');
+  height: 100vh;
+  background-position: center;
+}
+.section-1 .time{
+  background-color: rgba(0,0,0,.5);
+  font-size: 2rem;
+  color: #fff;
+  padding: 20px;
+  border-radius: 50%;
+  text-align: center;
+  float: left;
+  height: 95px;
+  width: 95px;
+  margin: 0 5px;
+  font-family: Montserrat-Regular;
+}
+.section-1 .timer-container {
+  margin: 0 auto;
+  top: 80vh;
+  padding-top: 70vh;
+  width: 425px;
+}
+.save-date{
+  font-family: Ballegra;
+  font-size: 6rem;
+  color: #fff;
+  text-align: center;
+  margin-top: 3vh;
+  letter-spacing: 2px;
+}
+.section-2{
+  background-image: url(assets/Section2_img.png);
+  min-height: 100vh;
+  background-position-x: center;
+  background-position: top;
+}
+.section-2 .text-section{
+  padding-top: 45vh;
+}
+.section-2 .main-txt{
+  font-family: Ballegra;
+  font-size: 8.4rem;
+  text-align: center;
+}
+.section-2 .secondary-txt{
+  font-size: 2.4rem;
+  text-align: center;
+  
+  margin: 0 auto;
+  line-height: 40px;
+}
+.section-3{
+  text-align: center;
+  background-image: url('assets/pattern1_img.svg');
+  background-repeat: repeat-x;
+  background-position: top;
+  padding-top: 45px;
+  font-size: 1.5rem;
+  margin-top: -2px;
+  line-height: 30px;  
+}
+.section-3 .text-section,
+.section-3 .col{
+  padding: 25px 0;
+}
+.section-3 strong{
+  font-family: Montserrat-Bold;
+  font-size: 1.8rem;
+}
+.section-3 .middle{
+  border-top: 1px solid #7B7565;
+  border-bottom: 1px solid #7B7565;
+}
+.section-3 .middle .first-col{
+  border-right:  1px solid #7B7565;
+}
+.section-3 .last-txt{
+  font-family: Ballegra;
+  font-size: 4rem; 
+}
+.section-5{
+  background-color: #B92A25; 
+  padding: 25px 0;
+  text-align: center;
+  line-height: 25px;
+}
+.section-5 *{
+  color: #fff;
+}
+.section-5 strong{
+  font-size: 1.8rem;
+  
+}
+.section-5 .line{
+  height: 1px;
+  width: 10%;
+  background-color: #fff;
+  margin: 20px auto;
+}
+.made-with{
+  font-size: 2rem;
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+.made-with svg{
+  margin-bottom:  -25px;
+}
+.text-inner {
+  margin-left: -43px;
+  z-index: 1;
+  background-color: #B92A25;
+  padding: 6px;
+}
+@media (max-width: 761px){
+  .section-3 .middle .first-col{
+    border: none;
+  }
+}
