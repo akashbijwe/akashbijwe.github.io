@@ -146,17 +146,18 @@
     border-bottom: 1px solid #7B7565;
   }
   .section-1 .timer-container {
-    top: 70vh;
+    padding-top: 55vh;
+    width: 325px;
   }
   .section-2 {
     background-position: center;
     background-position-y: -70px;
   }
   .section-2 .text-section {
-    padding-top: 38vh;
+    padding-top: 42vh;
   }
   .section-2 .secondary-txt {
-    font-size: 2rem;
+    font-size: 1.6rem;
   }  
   .section-2 .main-txt{
     margin-top: 4vh;
@@ -167,6 +168,11 @@
     display: block;
     font-family: Ballegra;
     font-size: 4rem;
+  }
+  .section-1 .time{
+    height: 75px;
+    width: 75px;
+    font-size: 1.5rem;
   }
 }
 
