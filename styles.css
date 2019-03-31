@@ -18,6 +18,10 @@
   src: url(assets/Montserrat-Regular.ttf);
   font-weight: bold;
 }
+body{
+  width: 100%;
+  overflow: hidden;
+}
 *{
   font-family: Montserrat-Medium;
   color: #7B7565;
