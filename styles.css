@@ -140,6 +140,10 @@
   background-color: #B92A25;
   padding: 6px;
 }
+.contact-details a:hover{
+  text-decoration: none;
+  color: #fff;
+}
 @media (max-width: 761px){
   .section-3 .middle .first-col{
     border: none;
@@ -173,6 +177,9 @@
     height: 75px;
     width: 75px;
     font-size: 1.5rem;
+  }
+  .contact-details .contact{
+    display: block
   }
 }
 
