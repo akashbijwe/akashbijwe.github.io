@@ -29,22 +29,22 @@
 }
 .section-1 .time{
   background-color: rgba(0,0,0,.5);
-  font-size: 2rem;
+  font-size: 1.8rem;
   color: #fff;
   padding: 20px;
   border-radius: 50%;
   text-align: center;
   float: left;
-  height: 95px;
-  width: 95px;
-  margin: 0 5px;
+  height: 90px;
+  width: 90px;
+  margin: 0 3px;
   font-family: Montserrat-Regular;
 }
 .section-1 .timer-container {
   margin: 0 auto;
   top: 80vh;
   padding-top: 70vh;
-  width: 425px;
+  width: 385px;
 }
 .save-date{
   font-family: Ballegra;
@@ -67,6 +67,9 @@
   font-family: Ballegra;
   font-size: 8.4rem;
   text-align: center;
+}
+.section-2 .main-txt span{
+  font-family: Ballegra;
 }
 .section-2 .secondary-txt{
   font-size: 2.4rem;
@@ -140,5 +143,30 @@
 @media (max-width: 761px){
   .section-3 .middle .first-col{
     border: none;
+    border-bottom: 1px solid #7B7565;
+  }
+  .section-1 .timer-container {
+    top: 70vh;
+  }
+  .section-2 {
+    background-position: center;
+    background-position-y: -70px;
+  }
+  .section-2 .text-section {
+    padding-top: 38vh;
+  }
+  .section-2 .secondary-txt {
+    font-size: 2rem;
+  }  
+  .section-2 .main-txt{
+    margin-top: 4vh;
+    line-height: 50px;
+    margin-bottom: 4vh;
+  }
+  .section-2 .main-txt span{
+    display: block;
+    font-family: Ballegra;
+    font-size: 4rem;
   }
 }
+
