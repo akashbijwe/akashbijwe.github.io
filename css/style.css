@@ -2603,8 +2603,6 @@ h6 {
 ============================================================================================ */
 /* Start Portfolio Area css
 ============================================================================================ */
-.portfolio_area {
-  padding-bottom: 120px; }
   @media (max-width: 991px) {
     .portfolio_area {
       padding-bottom: 50px; } }
@@ -3300,87 +3298,3 @@ h6 {
 /*---------------------------------------------------- */
 
 /*# sourceMappingURL=style.css.map */
-
-/* Start Newsletter Area css
-============================================================================================ */
-.newsletter_area {
-  color: #ffffff;
-}
-
-.subscription_box {
-  background: url(../img/subscribe-bg.png) no-repeat center;
-  padding: 150px 0px;
-}
-@media (max-width: 767px) {
-  .subscription_box {
-    padding: 50px 20px;
-  }
-}
-.subscription_box h2 {
-  font-weight: 700;
-  margin-bottom: 20px;
-}
-@media (max-width: 767px) {
-  .subscription_box h2 {
-    font-size: 30px;
-  }
-}
-.subscription_box p {
-  margin-bottom: 0;
-}
-.subscription_box .subscription input {
-  min-width: 380px;
-  max-width: 380px;
-  line-height: 48px;
-  padding: 0 25px;
-  border: 1px solid #ffffff;
-  background: transparent;
-  font-weight: 400;
-  border-radius: 5px;
-  color: #ffffff;
-}
-.subscription_box .subscription input:focus {
-  outline: none;
-}
-@media (max-width: 420px) {
-  .subscription_box .subscription input {
-    min-width: 250px;
-  }
-}
-.subscription_box .primary-btn {
-  margin-left: 10px;
-  background: #ffffff;
-  text-transform: uppercase;
-  color: #222222;
-  border-radius: 5px;
-  line-height: 48px;
-  font-size: 14px;
-  padding: 0px 38px;
-  cursor: pointer;
-}
-@media (max-width: 767px) {
-  .subscription_box .primary-btn {
-    margin-top: 20px;
-  }
-}
-.subscription_box .subcribe-form {
-  margin-top: 45px;
-}
-
-.subscription .info {
-  color: #fff;
-  width: 100%;
-  font-size: 12px;
-  background: transparent;
-}
-
-.subscription .info.valid {
-  color: green;
-}
-
-.subscription .info.error {
-  color: red;
-}
-
-/* End Newsletter Area css
-============================================================================================ */
