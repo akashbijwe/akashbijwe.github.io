@@ -433,6 +433,9 @@
 	</footer>
 	<script src="aos.js"></script>
 	<script>
+		//document.getElementsByTagName('img').ondragstart = function() { return false; };
+		//document.getElementsByTagName('img').addEventListener("mousedown", mouseDown);
+		document.addEventListener('contextmenu', event => event.preventDefault());
 		AOS.init();
 	</script>
 	<!--================End Footer Area =================-->
