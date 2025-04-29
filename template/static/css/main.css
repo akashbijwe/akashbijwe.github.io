@@ -494,13 +494,32 @@ a:hover {
   flex-shrink: 0;
   user-select: none;
 }
+
 /*# sourceMappingURL=main.dcb663bd.css.map*/
 
 .signature-img {
   height: 60vh;
   margin-top: 10vh;
 }
-.signature p{
+
+.signature p {
   font-size: 2.5rem;
   margin-top: -3rem;
+}
+
+.programming-icons {
+  display: block;
+  clear: both;
+  margin-bottom: 2rem;
+}
+
+.programming-heading {
+  border-bottom: 1px solid #fff;
+  padding-bottom: 0.3rem;
+  width: 80%;
+  float: right;
+  clear: both;
+  position: relative;
+  margin-block: 1rem;
+  margin-top: 1.5rem;
 }
