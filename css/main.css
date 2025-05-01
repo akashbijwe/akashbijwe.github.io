@@ -73,14 +73,6 @@
   width: 1.2rem
 }
 
-@media screen and (max-width:768px) {
-  .menu-toggle {
-    left: 1rem;
-    top: 1rem;
-    -webkit-transform: translateY(0);
-    transform: translateY(0)
-  }
-}
 
 .menu-item {
   background-color: var(--bg-primary);
@@ -131,7 +123,8 @@
   display: flex;
   flex-direction: row;
   height: 100vh;
-  justify-content: center
+  justify-content: center;
+  position: relative;
 }
 
 .top-section .intro {
@@ -206,7 +199,7 @@
   }
 
   .top-section .signature {
-    height: 30%;
+    height: 50%;
     padding: 2rem 0 0
   }
 }
@@ -421,6 +414,10 @@
   font-size: 16px
 }
 
+#root {
+  position: relative;
+  z-index: 1;
+}
 .dark-mode {
   --bg-primary: #2f2f2f;
   --text-primary: #fff;
@@ -498,13 +495,13 @@ a:hover {
 /*# sourceMappingURL=main.dcb663bd.css.map*/
 
 .signature-img {
-  height: 60vh;
+  width: 60vw;
   margin-top: 10vh;
 }
 
 .signature p {
-  font-size: 2.5rem;
-  margin-top: -3rem;
+  font-size: 2rem;
+  margin-top: -9rem;
 }
 
 .programming-icons {
@@ -522,4 +519,25 @@ a:hover {
   position: relative;
   margin-block: 1rem;
   margin-top: 1.5rem;
+}
+#particles-js {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  z-index: 0;
+}
+
+@media screen and (max-width:768px) {
+  .menu-toggle {
+    left: 1rem;
+    top: 1rem;
+    -webkit-transform: translateY(0);
+    transform: translateY(0)
+  }
+  .signature p {
+    margin-top: -2rem;
+    font-size: 1.5rem;
+  }
 }
