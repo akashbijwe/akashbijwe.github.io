@@ -269,7 +269,7 @@
   .section-wrapper .section,
   .section-wrapper .section.section-reverse {
     flex-direction: column;
-    padding: 3rem
+    padding: 1rem
   }
 
   .section-wrapper .section .section-header,
@@ -284,7 +284,7 @@
   .section-wrapper .section .section-content,
   .section-wrapper .section.section-reverse .section-content {
     padding: 0;
-    text-align: center
+    text-align: left
   }
 }
 
@@ -418,6 +418,7 @@
   position: relative;
   z-index: 1;
 }
+
 .dark-mode {
   --bg-primary: #2f2f2f;
   --text-primary: #fff;
@@ -520,6 +521,7 @@ a:hover {
   margin-block: 1rem;
   margin-top: 1.5rem;
 }
+
 #particles-js {
   position: fixed;
   top: 0;
@@ -536,8 +538,28 @@ a:hover {
     -webkit-transform: translateY(0);
     transform: translateY(0)
   }
+
   .signature p {
     margin-top: -2rem;
     font-size: 1.5rem;
+  }
+
+  .signature-img {
+    width: 100vw;
+    margin-top: 10vh;
+  }
+
+  .programming-heading {
+    width: 100%;
+    text-align: right;
+  }
+
+  .about-section .programming-icons {
+    text-align: end;
+  }
+
+  .about-section .programming-icons svg {
+    margin-left: 1rem;
+    margin-bottom: 1rem;
   }
 }
