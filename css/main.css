@@ -12,7 +12,9 @@
   justify-content: center;
   margin: .5rem;
   padding: .5rem;
-  transition: all .5s
+  transition: all .5s;
+  width: 1rem;
+  height: 1rem;
 }
 
 .circle-button:hover {
@@ -199,8 +201,8 @@
   }
 
   .top-section .signature {
-    height: 50%;
-    padding: 2rem 0 0
+    /* height: 50%;
+    padding: 2rem 0 0 */
   }
 }
 
@@ -417,6 +419,7 @@
 #root {
   position: relative;
   z-index: 1;
+  padding-bottom: 2rem;
 }
 
 .dark-mode {
@@ -497,12 +500,12 @@ a:hover {
 
 .signature-img {
   width: 60vw;
-  margin-top: 10vh;
+  height: 100vh;
 }
 
 .signature p {
   font-size: 2rem;
-  margin-top: -9rem;
+  margin-top: -20rem;
 }
 
 .programming-icons {
@@ -540,13 +543,13 @@ a:hover {
   }
 
   .signature p {
-    margin-top: -2rem;
+    margin-top: -25rem;
     font-size: 1.5rem;
   }
 
   .signature-img {
     width: 100vw;
-    margin-top: 10vh;
+    /* margin-top: 10vh; */
   }
 
   .programming-heading {
@@ -562,4 +565,14 @@ a:hover {
     margin-left: 1rem;
     margin-bottom: 1rem;
   }
+}
+
+.clearfix::after {
+  display: block;
+  content: "";
+  clear: both;
+}
+
+.underline {
+  text-decoration: underline;
 }
